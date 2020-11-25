@@ -1,0 +1,409 @@
+<!-----------------------------
+Web Developer Name: Carl Wilson Saqui
+Description: Sample school app 
+------------------------------>
+<!----------------------------
+[Table of Contents]
+
+1.navigation-menu
+2.section-1 / Homepage
+3.section-2 / Schedule
+4.section-3 / Grades
+5.section-4 / Enrollmwnt
+6.section-5 / Activities
+7.section-6 / Faculty Evaluation
+8.section-7 / Application for Graduation
+9.section-8 / Profile
+10.section-10 / Settings
+----------------------------->
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+<head>
+  <title>Sample WEB | Home</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <!--navbar-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+</head>
+<body style="background: var(--bg);">
+<!-------overlay-------->
+<div id="overlay">
+    <div class="loader-content">
+      <i class="fas fa-cog"></i>
+      <h5>I am Sad Boy.</h5>
+    </div>
+</div>
+<!-------navigation-menu-------->
+<div id="overlay-side" onclick="close_nav()"></div><!--show when sidebar menu clicked-->
+
+<nav class="navbar navbar-default navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="menu-button">
+        <span class="fas fa-bars"></span>
+      </div>
+      <div class="sidebar">
+        <div class="current"><span>SAD BOY'S</span>-Home</div>
+        <ul>
+          <li class="active home"><a href="#" onclick="show_home()"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="#"><i class="far fa-clock"></i>Schedule</a></li>
+          <li><a href="#" class="grades" onclick="show_grade()"><i class="far fa-file"></i>Grades</a></li>
+          <li><a href="#"><i class="far fa-edit"></i>Enrollment</a></li>
+          <li><a href="#"><i class="far fa-calendar"></i>Activities</a></li>
+          <li><a href="#"><i class="fas fa-chalkboard-teacher"></i>Faculty Evaluation</a></li>
+          <li><a href="#"><i class="fas fa-pen-alt"></i>Application for <span class="grad">Graduation</span></a></li>
+          <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+          <li><a href="#" onclick="goto_settings()"><i class="fas fa-cog"></i>Settings</a></li>
+        </ul>
+      </div>
+      <div class="navbar-brand"><p><!--<img src="image/g.png">--><i class="fas fa-cog"></i><span class="s-one">Broken Institute Of Sad Boy's</span><span class="s-two">SAD BOY'S</span></p></div>
+
+    </div>
+    <ul class="right-side">
+    <!--something to right-->
+     <li><i class="fas fa-bell"><span>1</span></i><i class="fas fa-user-circle"></i></li>
+    </ul>
+  </div>
+</nav>
+<!------------------section-1---------------------->
+<div class="section-1">
+  <div class="container_caro">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <h5>CAVITE CAMPUS</h5> 
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="image/cover.png">
+        </div>
+        <div class="item">
+          <img src="image/cover.png">
+        </div>
+        <div class="item">
+          <img src="image/cover.png">
+        </div>
+        <h1 class="tup">Broken Institute Of Sad Boy's |&nbsp;<span style="font-family: 'Beth Ellen';">News</span></h1>
+      <div class="controls">
+        <a class="lefty" href="#myCarousel" data-slide="prev"><i class="fas fa-arrow-left"></i></a>
+        <a class="righty" href="#myCarousel" data-slide="next"><i class="fas fa-arrow-right"></i></a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------section-3------------------------>
+<div class="section-3">
+  <div class="warning">
+    <h1><i class="fas fa-exclamation-circle" style="color: #E53935;"></i> Important Note:</h1>
+    <p>Viewing of grades online is strictly for personal use only! Students who want an official copy from the Registrar for scholarship/employment purposes, must make a request for the official document from the Registrar's Office.
+    Your GRADES posted in SAMPLE WEB from the previous school years were part of the data we migrated from the old enrollment system and are still subject for checking and validation from the registrar.<a href="#"> Evalute your teacher first to view your grades. Click here.</a></p>
+  </div>
+  <div class="section-3-padding">
+    <div class="color-blue">
+      <div class="row-grades-description">
+        <div class="column-grades-description">
+          <h4>SCHOOL YEAR 1819</h4>
+          <h4>Admission Status  CROSS-ENROLEE</h4>
+          <h4>Course Code BET-COET-C</h4>
+          <h4>GPA (excludes NSTP and subjects with non-numeric ratings) 2.30</h4>
+        </div>
+        <div class="column-grades-description">
+          <h4>Term  First</h4>
+          <h4>Scholastic Status Regular</h4>
+          <h4>Course Description  Bachelor of Engineering Technology<h4>
+        </div>
+      </div>
+      <div class="row-grades-title">
+        <div class="column-grades column-1 color">
+          <h3>No.</h3>
+        </div>
+        <div class="column-grades column-2 color">
+          <h3>Subject Code</h3>
+        </div>
+        <div class="column-grades column-3 color">
+          <h3>Description</h3>
+        </div>
+        <div class="column-grades column-4 color">
+          <h3>Faculty Name</h3>
+        </div>
+        <div class="column-grades column-5 color">
+          <h3>Units</h3>
+        </div>
+        <div class="column-grades column-6 color">
+          <h3>Section</h3>
+        </div>
+        <div class="column-grades column-7 color">
+          <h3>FINAL GRADE</h3>
+        </div>
+        <div class="column-grades column-8 color">
+          <h3>Grade Status</h3>
+        </div>
+      </div>
+      <div class="row-grades">
+        <div class="column-grades column-1">
+          <h4>1</h4>
+        </div>
+        <div class="column-grades column-2">
+          <h4>MJTH-1</h4>
+        </div>
+        <div class="column-grades column-3">
+          <h4>My Jokes to Her</h4>
+        </div>
+        <div class="column-grades column-4">
+          <h4>SAQUI, CARL WILSON</h4>
+        </div>
+        <div class="column-grades column-5">
+          <h4>3</h4>
+        </div>
+        <div class="column-grades column-6">
+          <h4>SAD-BOY-S-2A</h4>
+        </div>
+        <div class="column-grades column-7">
+          <h4><span style="color: red;">5.00</span></h4>
+        </div>
+        <div class="column-grades column-8">
+          <h4>Failed</h4>
+        </div>
+      </div>
+      <div class="row-grades">
+        <div class="column-grades column-1">
+          <h4>2</h4>
+        </div>
+        <div class="column-grades column-2">
+          <h4>HRTM-C</h4>
+        </div>
+        <div class="column-grades column-3">
+          <h4>Her Replies To Me</h4>
+        </div>
+        <div class="column-grades column-4">
+          <h4>SAQUI, CARL WILSON</h4>
+        </div>
+        <div class="column-grades column-5">
+          <h4>2</h4>
+        </div>
+        <div class="column-grades column-6">
+          <h4>SAD-BOY-S-2A</h4>
+        </div>
+        <div class="column-grades column-7">
+          <h4>Drop</h4>
+        </div>
+        <div class="column-grades column-8">
+          <h4>Retake</h4>
+        </div>
+      </div>
+      <div class="row-grades">
+        <div class="column-grades column-1">
+          <h4>3</h4>
+        </div>
+        <div class="column-grades column-2">
+          <h4>MATH-C</h4>
+        </div>
+        <div class="column-grades column-3">
+          <h4>My Appeal To Her</h4>
+        </div>
+        <div class="column-grades column-4">
+          <h4>SAQUI, CARL WILSON</h4>
+        </div>
+        <div class="column-grades column-5">
+          <h4>3</h4>
+        </div>
+        <div class="column-grades column-6">
+          <h4>SAD-BOY-S-2A</h4>
+        </div>
+        <div class="column-grades column-7">
+          <h4><span style="color: red;">5.00</span></h4>
+        </div>
+        <div class="column-grades column-8">
+          <h4>Failed</h4>
+        </div>
+      </div>
+      <div class="row-grades">
+        <div class="column-grades column-1">
+          <h4>4</h4>
+        </div>
+        <div class="column-grades column-2">
+          <h4>AD-LEC</h4>
+        </div>
+        <div class="column-grades column-3">
+          <h4>Actual Date Lectures</h4>
+        </div>
+        <div class="column-grades column-4">
+          <h4>SAQUI, CARL WILSON</h4>
+        </div>
+        <div class="column-grades column-5">
+          <h4>1</h4>
+        </div>
+        <div class="column-grades column-6">
+          <h4>SAD-BOY-S-2A</h4>
+        </div>
+        <div class="column-grades column-7">
+          <h4>UD (Unofficial Drop)</h4>
+        </div>
+        <div class="column-grades column-8">
+          <h4>UD</h4>
+        </div>
+      </div>
+      <div class="row-grades">
+        <div class="column-grades column-1">
+          <h4>5</h4>
+        </div>
+        <div class="column-grades column-2">
+          <h4>HLRTM-C</h4>
+        </div>
+        <div class="column-grades column-3">
+          <h4>&nbsp;&nbsp;Her Long Replies To Me &nbsp;&nbsp;(after my flood messages)</h4>
+        </div>
+        <div class="column-grades column-4">
+          <h4>SAQUI, CARL WILSON</h4>
+        </div>
+        <div class="column-grades column-5">
+          <h4>1</h4>
+        </div>
+        <div class="column-grades column-6">
+          <h4>SAD-BOY-S-2A</h4>
+        </div>
+        <div class="column-grades column-7">
+          <h4>Drop</h4>
+        </div>
+        <div class="column-grades column-8">
+          <h4>Retake</h4>
+        </div>
+      </div>
+      <div class="row-grades">
+        <div class="column-grades column-1">
+          <h4>6</h4>
+        </div>
+        <div class="column-grades column-2">
+          <h4>IDTC-L</h4>
+        </div>
+        <div class="column-grades column-3">
+          <h4>Introduction to Conversation</h4>
+        </div>
+        <div class="column-grades column-4">
+          <h4>SAQUI, CARL WILSON</h4>
+        </div>
+        <div class="column-grades column-5">
+          <h4>7</h4>
+        </div>
+        <div class="column-grades column-6">
+          <h4>SAD-BOY-S-2A</h4>
+        </div>
+        <div class="column-grades column-7">
+          <h4><span style="color: red;">5.00</span></h4>
+        </div>
+        <div class="column-grades column-8">
+          <h4>Failed</h4>
+        </div>
+      </div>
+      <div class="row-grades">
+        <div class="column-grades column-1">
+          <h4>7</h4>
+        </div>
+        <div class="column-grades column-2">
+          <h4>INTERN-L</h4>
+        </div>
+        <div class="column-grades column-3">
+          <h4>Intern In Being Sad Boy</h4>
+        </div>
+        <div class="column-grades column-4">
+          <h4>SAQUI, CARL WILSON</h4>
+        </div>
+        <div class="column-grades column-5">
+          <h4>99</h4>
+        </div>
+        <div class="column-grades column-6">
+          <h4>SAD-BOY-S-2A</h4>
+        </div>
+        <div class="column-grades column-7">
+          <h4>1.00</h4>
+        </div>
+        <div class="column-grades column-8">
+          <h4>Very High Average</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="acc-mobile">
+  <button class="accordion">CPET11L-C</button>
+  <div class="panel">
+    <h6>Subject Code: CPET11L-C</h6>
+    <h6>Description:  Object Oriented Programming 2 Lec.</h6>
+    <h6>Faculty Name: SAQUI, CARL WILSON</h6>
+    <h6>Units: 1</h6>
+    <h6>Section: BET-COET-S-12B</h6>
+    <h6>FINAL GRADE: 1.25</h6>
+    <h6>Grade Status: Very Superior</h6>
+  </div>
+  <button class="accordion">CPET11L-C</button>
+  <div class="panel">
+    <h6>Subject Code: CPET11L-C</h6>
+    <h6>Description:  Object Oriented Programming 2 Lec.</h6>
+    <h6>Faculty Name: SAQUI, CARL WILSON</h6>
+    <h6>Units: 1</h6>
+    <h6>Section: BET-COET-S-12B</h6>
+    <h6>FINAL GRADE: 1.25</h6>
+    <h6>Grade Status: Very Superior</h6>
+  </div>
+  <button class="accordion">CPET11L-C</button>
+  <div class="panel">
+    <h6>Subject Code: CPET11L-C</h6>
+    <h6>Description:  Object Oriented Programming 2 Lec.</h6>
+    <h6>Faculty Name: SAQUI, CARL WILSON</h6>
+    <h6>Units: 1</h6>
+    <h6>Section: BET-COET-S-12B</h6>
+    <h6>FINAL GRADE: 1.25</h6>
+    <h6>Grade Status: Very Superior</h6>
+  </div>
+</div>
+<!-----------------------section-9------------------------->
+<div class="section-9">
+  <div class="settings">
+    <div class="student-profile">
+      <h1>Profile</h1>
+      <h3>Display Picture</h3>
+      <p>Change your profile picture so that SAMPLE WEB admins can identify you easily. Note: wear your uniforms and I.D (this is required*).</p>
+      <ul>
+        <li><p class="cdp"><img src="image/g.png"><span class="dp">&nbsp;Change DP</span></p></li>
+      </ul>
+      <h3 class="acc-s">Account Settings</h3>
+      <p>You can change your password what ever you want. (letters and numbers only*)</p>
+      <ul>
+        <li><h5 class="manage"><i class="fas fa-lock"></i> Change your password. <span class="efas">Change</span></h5></li>
+      </ul>  
+    </div>
+
+    <div class="encapsule">
+      <div class="disable-loaders">
+        <h1>Display Settings</h1>
+        <h3>Loaders</h3>
+        <p>Disabling loaders will load page faster.</p>
+        <label class="switch-loader switch"><input type="checkbox" name="loaders"><span class="slider round"></span></label>
+      </div>
+      <div class="theme-settings">  
+        <h3>Color Themes</h3>
+        <h4>Default Theme</h4>
+        <label class="switch-default switch"><input type="checkbox" name="default"><span class="slider round"></span></label>
+        <h4>Dark Mode</h4>
+        <label class="switch-dark switch"><input type="checkbox" name="dark"><span class="slider round"></span></label>
+        <h4>Cavs Theme</h4>
+        <label class="switch-cavs switch"><input type="checkbox" name="cavs"><span class="slider round"></span></label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="script.js"></script> 
+</body>
+</html>
